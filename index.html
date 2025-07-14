@@ -35,3 +35,177 @@
     </footer>
 </body>
 </html>
+<!-- Viverlink Networks - Website Template -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Viverlink Networks</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --blue: #002EAA;
+      --blue-light: #0050FF;
+      --black: #000;
+      --white: #fff;
+      --gray: #ccc;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Rajdhani', sans-serif;
+      background-color: var(--black);
+      color: var(--white);
+      line-height: 1.6;
+    }
+    header {
+      background: var(--black);
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header img {
+      height: 50px;
+    }
+    nav a {
+      color: var(--white);
+      margin-left: 30px;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+    .hero {
+      padding: 100px 20px;
+      text-align: center;
+      background: linear-gradient(to right, var(--blue), var(--blue-light));
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-top: 20px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .btn {
+      display: inline-block;
+      margin: 20px 10px 0;
+      padding: 12px 24px;
+      color: var(--white);
+      background: var(--black);
+      text-decoration: none;
+      font-weight: 600;
+      text-transform: uppercase;
+      border-radius: 5px;
+    }
+    section {
+      padding: 80px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .services, .about {
+      background-color: #111;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      padding: 40px;
+    }
+    .form-section {
+      background-color: #111;
+      margin-top: 20px;
+      border-radius: 10px;
+      padding: 40px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    form input, form textarea {
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 1rem;
+    }
+    form button {
+      background-color: var(--blue);
+      color: var(--white);
+      padding: 12px;
+      font-weight: 600;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-transform: uppercase;
+    }
+    form button:hover {
+      background-color: var(--blue-light);
+    }
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: var(--gray);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Viverlink Logo">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Trained Field Technicians. On Demand.</h1>
+    <p>Supporting MSPs, telecoms, and data centers with reliable on-site technical support across Canada.</p>
+    <a href="#contact" class="btn">Request a Technician</a>
+    <a href="services.html" class="btn">View Services</a>
+  </section>
+
+  <section class="about">
+    <h2>Who We Are</h2>
+    <p>Viverlink Networks is a field-ready IT services provider based in Ottawa, offering reliable, certified technicians across Canada. We serve MSPs, telecom providers, and businesses in need of on-site support for network installations, cable management, and remote hands assistance.</p>
+  </section>
+
+  <section class="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Network Deployments & Installations</li>
+      <li>Remote Hands & Emergency Field Support</li>
+      <li>Cable Termination & Rack Management</li>
+      <li>Hardware Troubleshooting & Upgrades</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="form-section">
+    <h2>Request a Service</h2>
+    <form action="mailto:viverlinknetworks@outlook.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="text" name="company" placeholder="Company Name">
+      <textarea name="message" rows="5" placeholder="Describe your service request..." required></textarea>
+      <button type="submit">Submit Request</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Viverlink Networks Inc. | Ottawa, ON | All rights reserved
+  </footer>
+</body>
+</html>
